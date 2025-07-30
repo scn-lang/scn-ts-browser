@@ -36,12 +36,11 @@ export const generateScn = (
 
 
 // Re-export from scn-ts-core for convenience
-export { serializeGraph } from 'scn-ts-core';
-export type {
-  RankedCodeGraph,
-  FileContent,
-  CodeNode,
-  CodeEdge,
-  CodeGraph,
-  SerializeGraphOptions,
-} from 'scn-ts-core';
+export * from 'scn-ts-core';
+
+// Re-export from repograph-browser for convenience. This makes `scn-ts-browser`
+// a one-stop-shop for creating SCN maps in the browser.
+export {
+  analyzeProject,
+  initializeParser,
+} from 'repograph-browser';
