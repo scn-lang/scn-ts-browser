@@ -1,6 +1,6 @@
 {
   "name": "scn-ts-browser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Browser-compatible SCN map generator for TypeScript/JavaScript projects.",
   "author": "anton",
   "license": "MIT",
