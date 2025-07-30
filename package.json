@@ -1,0 +1,49 @@
+{
+  "name": "scn-ts-browser",
+  "version": "1.0.0",
+  "description": "Browser-compatible SCN map generator for TypeScript/JavaScript projects.",
+  "author": "anton",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/scn-ts.git",
+    "directory": "packages/scn-ts-browser"
+  },
+  "keywords": [
+    "scn",
+    "typescript",
+    "code-analysis",
+    "context-map",
+    "repograph",
+    "browser"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "scn-ts-core": "1.0.1"
+  },
+  "peerDependencies": {
+    "repograph-browser": ">=0.1.10"
+  },
+  "devDependencies": {
+    "repograph-browser": "0.1.10",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  }
+}
